@@ -2,6 +2,7 @@
 const { spec, request } = require('pactum');
 const { eachLike, like } = require('pactum-matchers');
 
+
 request.setBaseUrl('http://lojaebac.ebaconline.art.br');
 
 let token;
@@ -31,3 +32,4 @@ it('API - listagem de usuarios', async () => {
             })
         })
 });
+

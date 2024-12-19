@@ -2,6 +2,7 @@ const { reporter, flow, handler, mock } = require('pactum');
 const pf = require('pactum-flow-plugin');
 const { like } = require('pactum-matchers');
 
+
 function addFlowReporter() {
     pf.config.url = 'http://localhost:8080'; // pactum flow server url
     pf.config.projectId = 'lojaebac-front';
@@ -67,3 +68,4 @@ it('FRONT - deve autenticar o usuario corretamente', async () => {
         .expectStatus(200)
         .expectJson('success', true)
 })
+

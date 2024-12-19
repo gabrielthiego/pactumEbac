@@ -2,6 +2,7 @@
 
 const { spec } = require('pactum')
 
+
 it('API - deve autenticar o usuario corretamente', async () => {
     await spec()
         .post('http://lojaebac.ebaconline.art.br/public/authUser')

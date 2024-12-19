@@ -1,6 +1,7 @@
 const { reporter, flow } = require('pactum');
 const pf = require('pactum-flow-plugin');
 
+
 function addFlowReporter() {
   pf.config.url = 'http://localhost:8080'; // pactum flow server url
   pf.config.projectId = 'lojaebac-api';
@@ -32,3 +33,4 @@ it('API - deve autenticar o usuario corretamente', async () => {
         .expectStatus(200)
         .expectJson('success', true)
 })
+

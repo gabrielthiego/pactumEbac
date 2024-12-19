@@ -1,5 +1,5 @@
 {
-  "name": "pactumEbac",
+  "name": "pactum-contract",
   "version": "1.0.0",
   "description": "Testes em GraphQL com Pactum",
   "main": "index.js",
@@ -14,6 +14,7 @@
     "pactum": "^3.6.0"
   },
   "dependencies": {
+    "pactum-flow-plugin": "^0.1.4",
     "pactum-matchers": "^1.1.7"
   }
 }

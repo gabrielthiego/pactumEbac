@@ -19,3 +19,4 @@ const { spec } = require ('pactum');
       .expectStatus(200)
       .expectJson('data.authUser.success', true);
   });
+  
